@@ -18,7 +18,7 @@ metadata:
     project: roboshop
     tier: backend
 spec:
-    affinity:
+  affinity:
     podAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
       - labelSelector:
@@ -28,6 +28,7 @@ spec:
             values:
             - database
         topologyKey: topology.kubernetes.io/zone # border is AZ
-    containers:
-    - name: nginx
-      image: nginx
+  containers:
+  - name: nginx
+    image: nginx
+    
