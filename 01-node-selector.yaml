@@ -11,4 +11,4 @@ spec:
   - name: nginx
     image: nginx
   nodeSelector:
-    project: roboshop
+    project: roboshopa
